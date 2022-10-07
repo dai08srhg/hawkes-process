@@ -49,7 +49,9 @@ $$
 Simple computation is $O(n^2)$. However, efficient computation is $O(n)$.
 
 $$G_i = \sum_{j < i} ab\exp[-b(t_i - t)]$$
+
 Introducing the above, we have the following asymptotic equation.
+
 $$
 \begin{aligned}
 G_{i+1} &= (G_{i} + ab)\exp[-b(t_{i+1} - t_i)] 
@@ -57,7 +59,9 @@ G_{i+1} &= (G_{i} + ab)\exp[-b(t_{i+1} - t_i)]
 \frac{\partial G_{i+1}}{\partial b} &= \left(\frac{\partial G_{i}}{\partial b} + a\right) \exp[-b(t_{i+1} - t_i)] - G_{i+1}(t_{i+1}-t_i)
 \end{aligned}
 $$
+
 Using this, we can calculate $\lambda_i, \frac{\partial \lambda_i}{\partial a}, \frac{\partial \lambda_i}{\partial b}$
+
 $$
 \begin{aligned}
 \lambda_i &= G_i + \mu \\
