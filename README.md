@@ -2,9 +2,8 @@
 
 ## Hawkes Process
 The probability density function of hawkes process is given by
-$$ p_{[0,T]}(\bm{t}_n) = \prod_{i=1}^n \left[\mu + \sum_{j < i}g(t-t_j)\right]
 
-\times \exp\left[-\mu T -  \sum_{i=1}^n\int_{t_i}^T g(s-t_i)ds \right] $$
+$$ p_{[0,T]}(\bm{t}_n) = \prod_{i=1}^n \left[\mu + \sum_{j < i}g(t-t_j)\right] \times \exp\left[-\mu T -  \sum_{i=1}^n\int_{t_i}^T g(s-t_i)ds \right] $$
 
 where, $g(\tau)$ is a kernel function representing the influence from past events.
 
