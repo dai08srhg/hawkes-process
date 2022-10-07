@@ -6,7 +6,7 @@
 </div>
 
 ## Hawkes Process
-The probability density function of hawkes process is given by
+The probability density function of hawkes process for the observation period $[0, T]$ is given by
 
 $$ p_{[0,T]}(\bm{t}_{n}) = \prod_{i=1}^{n} \left[\mu + \sum_{j < i}g(t-t_j)\right] \times \exp\left[-\mu T -  \sum_{i=1}^n\int_{t_i}^T g(s-t_i)ds \right] $$
 
@@ -83,3 +83,5 @@ Maximum likelihood estimation
 $ python steepest_decent.py
 ```
 
+## Reference
+[点過程の時系列解析](https://www.kyoritsu-pub.co.jp/book/b10003181.html)
