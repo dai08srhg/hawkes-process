@@ -1,1 +1,3 @@
-# hawkes-process-quasi-newton
+# hawkes-process
+
+![Intensity Image](img/intensity.png)
