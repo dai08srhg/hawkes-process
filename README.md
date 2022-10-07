@@ -1,7 +1,9 @@
 # hawkes-process
 
-![Intensity Image](img/intensity.png)
-<img src="img/intensity.png" width="50%">
 
-![Intensity Image](img/expected_occurrences.png)
+<div align="center">
+<img src="img/intensity.png" width="70%">
+<img src="img/expected_occurrences.png" width="50%">
+</div>
+
 
