@@ -16,7 +16,7 @@ where, $g(\tau)$ is a kernel function representing the influence from past event
 Assume the following for kernel functions
 $$g(\tau) = ab \exp(-b\tau)$$
 
-Maximum likelihood estimation of $\boldsymbol{\theta} = \{\mu, a, b\}$
+Maximum likelihood estimation of $\boldsymbol{\theta} = \\{\mu, a, b\\}$
 
 The likelihood function $\mathcal{L}(\boldsymbol{\theta}|\boldsymbol{t}_n)$ is 
 
@@ -24,7 +24,7 @@ $$
 \mathcal{L}(\boldsymbol{\theta}|\boldsymbol{t}_n) = p_{[0,T]}(\boldsymbol{t}_n | \boldsymbol{\theta})
 $$
 
-$$\hat{\boldsymbol{\theta}} = \argmin_{\boldsymbol{\theta}}-\log \mathcal{L}(\boldsymbol{\theta}|\boldsymbol{t}_n) $$
+$$\hat{\boldsymbol{\theta}} = \arg\min_{\boldsymbol{\theta}}-\log \mathcal{L}(\boldsymbol{\theta}|\boldsymbol{t}_n) $$
 
 Estimate parameters by gradient descent method.
 
@@ -66,9 +66,7 @@ Using this, we can calculate $\lambda_i, \frac{\partial \lambda_i}{\partial a}, 
 
 $$
 \begin{aligned}
-\lambda_i &= G_i + \mu \\
-\frac{\partial \lambda_i}{\partial a} &=  \frac{G_i}{a}\\
-\frac{\partial \lambda_i}{\partial b} &= \frac{\partial G_i}{\partial b}
+\lambda_i = G_i + \mu, \quad \frac{\partial \lambda_i}{\partial a} =  \frac{G_i}{a}, \quad \frac{\partial \lambda_i}{\partial b} &= \frac{\partial G_i}{\partial b}
 \end{aligned}
 $$
 ## Usage
@@ -82,7 +80,7 @@ $ docker exec -it hawkes-process /bin/bash
 ```
 Maximum likelihood estimation
 ```
-$ python steepest_decent.py
+$ python main.py
 ```
 
 ## Reference
